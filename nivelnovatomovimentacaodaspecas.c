@@ -1,46 +1,68 @@
 #include <stdio.h>
 
+void recursivo(int torre){
+    if(torre > 0){
+        printf("Direita\n");
+        recursivo(torre - 1);
+        
+    }
+    }
+void recbispo(int bispo){
+    
+    if(bispo > 0){
+        printf("Direita\n");
+        recbispo(bispo - 1);
+    }
+    }
+
+void recrainha(int rainha){
+
+    if(rainha > 0){
+        printf("Esquerda\n");
+        recrainha(rainha - 1);
+}
+}
+    
 int main (){
     
-    int i = 0, i2 = 0, i3 = 0;
-    int cavalo = 1;
+    int torre = 4, bispo = 0, rainha = 7;
+    int ibispo;
+    int m1, m2;
     
     printf("=======-Torre-=======\n");
 
-    do{
         printf("Direita\n");
-        i++;
-    }while(i < 5);
+        recursivo(torre);
 
-  
     printf("=======-Bispo-=======\n");
 
-    while (i2 < 5)
-    {
-        printf("Cima\n""Direita\n");
-        i2++;
+    for(ibispo = 1; ibispo <= 5; ibispo++){
+        
+        printf("Cima\n");
+        printf("Direita\n");
+        recbispo(bispo);
     }
-    
+        
+
+
     printf("=======-Rainha-=======\n");
 
-   
-    for(i3 = 0; i3 < 8; i3++){
-  
     printf("Esquerda\n");
-    }   
+    recrainha(rainha);   
 
     printf("=======-Cavalo-=======\n");
 
-
-  
-    while(cavalo--){
-
-        for(int i4 = 0; i4 < 2; i4++){
-             printf("Baixo\n");
-        }
-        printf("Esquerda\n");
+    for(m1 = 1; m1 <= 2; m1++)
+    {
+        printf("Cima\n");
+    }
+    for(m2 = 1; m2 <= 1; m2++)
+    {
+        printf("Direita");
     }
 
+       
+    
     return 0;
 
 }
