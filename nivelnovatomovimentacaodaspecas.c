@@ -3,6 +3,7 @@
 int main (){
     
     int i = 0, i2 = 0, i3 = 0;
+    int cavalo = 1;
     
     printf("=======-Torre-=======\n");
 
@@ -23,8 +24,23 @@ int main (){
     printf("=======-Rainha-=======\n");
 
    
-    for(int i = 0; i < 8; i++){
+    for(i3 = 0; i3 < 8; i3++){
   
     printf("Esquerda\n");
     }   
+
+    printf("=======-Cavalo-=======\n");
+
+
+  
+    while(cavalo--){
+
+        for(int i4 = 0; i4 < 2; i4++){
+             printf("Baixo\n");
+        }
+        printf("Esquerda\n");
+    }
+
+    return 0;
+
 }
